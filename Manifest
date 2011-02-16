@@ -1,0 +1,7 @@
+CHANGELOG
+Manifest
+Rakefile
+lib/controllers/wizard_controller.rb
+lib/extensions/routes.rb
+lib/gendalf.rb
+lib/models/wizard_model.rb
