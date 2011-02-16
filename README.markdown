@@ -67,7 +67,7 @@ user_info.rb
 Get a working example
 ==========================
 
-1. Clone the repository: git://github.com/SkyWriter/Gendalf-Demo.git
+1. Clone the repository: git://github.com/SkyWriter/Gendalf-Demo.git (http://github.com/SkyWriter/Gendalf-Demo)
 
 2. Run bundler.
 
