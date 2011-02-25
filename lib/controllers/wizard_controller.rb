@@ -61,7 +61,7 @@ module Gendalf
   private
 
     def redirect_to_current_step
-      if /step\d+(|_submit)/.match(params[:action]) && step_no != current_step
+      if /^step\d*(|_submit)/.match(params[:action]) && step_no != current_step
         redirect_to wizard_path(current_step)
       end
     end
