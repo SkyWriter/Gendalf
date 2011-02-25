@@ -1,6 +1,8 @@
 CHANGELOG
 Manifest
+README.markdown
 Rakefile
+gendalf.gemspec
 lib/controllers/wizard_controller.rb
 lib/extensions/routes.rb
 lib/gendalf.rb

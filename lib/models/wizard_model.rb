@@ -64,9 +64,17 @@ module Gendalf
         step_model_class.class_eval do
           def initialize(attributes = {})
             return unless attributes.kind_of? Hash
+            if self.respond_to?(:custom_load_attributes)
+              custom_load_attributes attributes
+            else
+              load_attributes attributes
+            end
+          end
+          
+          def load_attributes(attributes)
             attributes.each do |name, value|  
               send("#{name}=", value)  
-            end  
+            end
           end
         
           def persisted?
@@ -82,7 +90,7 @@ module Gendalf
         end  
       
         # give user a chance to add the validations
-        step_model_class.instance_eval(&validations_block)
+        step_model_class.class_eval(&validations_block)
       
         return step_model_class
       end
