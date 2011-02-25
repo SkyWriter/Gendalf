@@ -1,3 +1,5 @@
+v0.4. Fixed unconditional redirection bug
+
 v0.3. Made submodel attributes loading a separate routine in order for it to be easier overriden. Also fixed wrong eval type, which somehow worked :)
 
 v0.2. First working implementation

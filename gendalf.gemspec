@@ -2,15 +2,15 @@
 
 Gem::Specification.new do |s|
   s.name = %q{gendalf}
-  s.version = "0.3"
+  s.version = "0.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ivan Kasatenko"]
   s.date = %q{2011-02-25}
   s.description = %q{Trivial gem to support wizard application style creation.}
   s.email = %q{sky.31338@gmail.com}
-  s.extra_rdoc_files = ["CHANGELOG", "lib/controllers/wizard_controller.rb", "lib/extensions/routes.rb", "lib/gendalf.rb", "lib/models/wizard_model.rb"]
-  s.files = ["CHANGELOG", "Manifest", "Rakefile", "lib/controllers/wizard_controller.rb", "lib/extensions/routes.rb", "lib/gendalf.rb", "lib/models/wizard_model.rb", "gendalf.gemspec"]
+  s.extra_rdoc_files = ["CHANGELOG", "README.markdown", "lib/controllers/wizard_controller.rb", "lib/extensions/routes.rb", "lib/gendalf.rb", "lib/models/wizard_model.rb"]
+  s.files = ["CHANGELOG", "Manifest", "README.markdown", "Rakefile", "gendalf.gemspec", "lib/controllers/wizard_controller.rb", "lib/extensions/routes.rb", "lib/gendalf.rb", "lib/models/wizard_model.rb"]
   s.homepage = %q{http://github.com/skywriter/gendalf}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Gendalf", "--main", "README.markdown"]
   s.require_paths = ["lib"]
