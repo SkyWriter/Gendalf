@@ -10,7 +10,7 @@ module Gendalf
     end
     
     def step
-      @step = model.new(params[param_name])
+      load_current_step
       send step_action_name
       render :action => step_action_name
     end
@@ -41,6 +41,10 @@ module Gendalf
     end
   
   protected
+  
+    def load_current_step
+      @step = model.new(params[param_name])
+    end
 
     def wizard_model
       raise "Please, implement 'wizard_model' method in #{self.class.name}"

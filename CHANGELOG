@@ -1,3 +1,5 @@
+v0.6. Extracted current step loading routine to be used outside of the original gem workflow
+
 v0.5. Fixed unconditional redirection bug (yeah, the same one)
 
 v0.4. Fixed unconditional redirection bug
