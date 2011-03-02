@@ -43,6 +43,7 @@ module Gendalf
   protected
   
     def load_current_step
+      @wizard_model = wizard_model
       @step = model.new(params[param_name])
     end
 

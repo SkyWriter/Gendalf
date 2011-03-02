@@ -1,3 +1,5 @@
+v0.7. Added @wizard_model assignment on every step
+
 v0.6. Extracted current step loading routine to be used outside of the original gem workflow
 
 v0.5. Fixed unconditional redirection bug (yeah, the same one)
