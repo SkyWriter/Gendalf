@@ -44,7 +44,7 @@ module Gendalf
   
     def load_current_step
       @wizard_model = wizard_model
-      @step = model.new(params[param_name])
+      @step = model.new(params[param_name] || wizard_model)
     end
 
     def wizard_model

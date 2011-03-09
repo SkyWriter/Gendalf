@@ -63,17 +63,35 @@ module Gendalf
       
         step_model_class.class_eval do
           def initialize(attributes = {})
-            return unless attributes.kind_of? Hash
             if self.respond_to?(:custom_load_attributes)
               custom_load_attributes attributes
-            else
-              load_attributes attributes
+              return
+            end
+            
+            puts "#{attributes.inspect}"
+            
+            if attributes.kind_of? WizardModel
+              load_attributes_from_wizard_model attributes
+              return
+            end
+            
+            if attributes.kind_of? Hash
+              load_attributes_from_hash attributes
+              return
+            end
+            
+            raise "Step model class requires initial values to be either Hash or WizardModel instance"
+          end
+          
+          def load_attributes_from_hash(attributes)
+            attributes.each do |name, value|  
+              send("#{name}=", value)  
             end
           end
           
-          def load_attributes(attributes)
-            attributes.each do |name, value|  
-              send("#{name}=", value)  
+          def load_attributes_from_wizard_model(model)
+            self.class.step_attributes.each do |attribute|
+              send("#{attribute}=", model.send(attribute))
             end
           end
         
