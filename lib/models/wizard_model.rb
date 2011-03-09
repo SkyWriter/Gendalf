@@ -68,7 +68,7 @@ module Gendalf
               return
             end
             
-            puts "#{attributes.inspect}"
+            return if attributes.nil?
             
             if attributes.kind_of? WizardModel
               load_attributes_from_wizard_model attributes

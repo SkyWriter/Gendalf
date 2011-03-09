@@ -1,3 +1,5 @@
+v0.9. Bugfix
+
 v0.8. Added step model instantination (in terms of attributes values) from WizardModel class instance possible
 
 v0.7. Added @wizard_model assignment on every step
