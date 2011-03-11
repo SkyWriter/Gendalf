@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{gendalf}
-  s.version = "0.9"
+  s.version = "0.9.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ivan Kasatenko"]
-  s.date = %q{2011-03-09}
+  s.date = %q{2011-03-11}
   s.description = %q{Trivial gem to support wizard application style creation.}
   s.email = %q{sky.31338@gmail.com}
   s.extra_rdoc_files = ["CHANGELOG", "README.markdown", "lib/controllers/wizard_controller.rb", "lib/extensions/routes.rb", "lib/gendalf.rb", "lib/models/wizard_model.rb"]

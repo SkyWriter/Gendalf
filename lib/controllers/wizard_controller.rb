@@ -93,7 +93,11 @@ module Gendalf
     end
 
     def step_no
-      params[:step].to_i-1
+      if params[:step].nil?
+        session[:current_step]
+      else
+        params[:step].to_i-1
+      end
     end
 
     def step_action_name(action_step_no=nil)

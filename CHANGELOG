@@ -1,3 +1,5 @@
+v0.9.1. Small fix for ajax request support
+
 v0.9. Bugfix
 
 v0.8. Added step model instantination (in terms of attributes values) from WizardModel class instance possible
